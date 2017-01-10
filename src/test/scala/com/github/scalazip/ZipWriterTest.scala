@@ -1,11 +1,9 @@
 package com.github.scalazip
 
-import org.junit.runner.RunWith
-import org.specs2.mutable.Specification
-import org.specs2.runner.JUnitRunner
+import org.specs2._
 
-@RunWith(classOf[JUnitRunner])
-class ZipWriterTest extends Specification with TestData {
+
+class ZipWriterTest extends mutable.Specification with TestData {
 
   "ZipWriterTest" should {
 

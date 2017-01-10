@@ -1,14 +1,9 @@
 package com.github.scalazip
 
-import org.specs2.mutable._
-import org.junit.runner.RunWith
-import org.specs2.runner.JUnitRunner
-import scala.collection.immutable.Stream
-import java.util.zip.ZipEntry
-import java.io.File
 
-@RunWith(classOf[JUnitRunner])
-class ZipIntegrationTest extends Specification with TestData {
+import org.specs2._
+
+class ZipIntegrationTest extends mutable.Specification with TestData {
 
   "ZipIntegrationTest" should {
     "Compress a File, and them uncompress it" in {
